@@ -19,6 +19,7 @@
 #define I2S_DOUT  5
 #define I2S_BCLK  26
 #define I2S_LRC   25
+#define SPEAKER_EN 33
 
 // Create audio object
 Audio audio;
@@ -31,6 +32,9 @@ void setup() {
 
   // Start Serial Monitor
   Serial.begin(115200);
+
+  pinMode(SPEAKER_EN, OUTPUT);
+  digitalWrite(SPEAKER_EN, HIGH); // We disable it on other scripts
 
   // Setup WiFi in Station mode
   WiFi.disconnect();

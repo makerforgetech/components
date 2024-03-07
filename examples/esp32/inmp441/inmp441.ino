@@ -12,9 +12,10 @@
 #include <driver/i2s.h>
 
 // Connections to INMP441 I2S microphone
-#define I2S_WS 25
-#define I2S_SD 33
+#define I2S_WS 23
+#define I2S_SD 34
 #define I2S_SCK 32
+#define SPEAKER_EN 33
 
 // Use I2S Processor 0
 #define I2S_PORT I2S_NUM_0
@@ -65,6 +66,9 @@ void setup() {
   i2s_setpin();
   i2s_start(I2S_PORT);
 
+  pinMode(SPEAKER_EN, OUTPUT);
+  digitalWrite(SPEAKER_EN, LOW);
+
 
   delay(500);
 }
@@ -73,7 +77,7 @@ void loop() {
 
   // False print statements to "lock range" on serial plotter display
   // Change rangelimit value to adjust "sensitivity"
-  int rangelimit = 3000;
+  int rangelimit = 500;
   Serial.print(rangelimit * -1);
   Serial.print(" ");
   Serial.print(rangelimit);
