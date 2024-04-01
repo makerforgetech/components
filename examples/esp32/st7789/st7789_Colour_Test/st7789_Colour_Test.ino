@@ -54,7 +54,13 @@
 
 TFT_eSPI tft = TFT_eSPI();  // Invoke custom library
 
+#define SPEAKER_EN 33
+
 void setup(void) {
+
+  pinMode(SPEAKER_EN, OUTPUT);
+  digitalWrite(SPEAKER_EN, LOW); // Avoid noise
+  
   tft.init();
 
   tft.fillScreen(TFT_BLACK);
