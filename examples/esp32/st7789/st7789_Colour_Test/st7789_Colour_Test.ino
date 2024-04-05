@@ -55,11 +55,14 @@
 TFT_eSPI tft = TFT_eSPI();  // Invoke custom library
 
 #define SPEAKER_EN 33
+#define DISPLAY_EN 15
 
 void setup(void) {
 
   pinMode(SPEAKER_EN, OUTPUT);
   digitalWrite(SPEAKER_EN, LOW); // Avoid noise
+  pinMode(DISPLAY_EN, OUTPUT);
+  digitalWrite(DISPLAY_EN, HIGH); // Enable or disable screen backlight
   
   tft.init();
 
@@ -113,6 +116,12 @@ void loop() {
   tft.println(" Blue text");
 
   delay(5000);
+
+  digitalWrite(DISPLAY_EN, LOW); // Enable or disable screen backlight
+
+  delay(5000);
+
+  digitalWrite(DISPLAY_EN, HIGH); // Enable or disable screen backlight
 
 
   // Binary inversion of colours

@@ -11,6 +11,8 @@
  * SDA (Pin 21)
  * SCL (Pin 22)
  * 
+ * Ref: https://github.com/usefulsensors/person_sensor_docs/blob/main/README.md
+ * 
  */
 
 // How long to wait between reading the sensor. The sensor can be read as

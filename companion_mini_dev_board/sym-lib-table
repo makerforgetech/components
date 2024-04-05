@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "MakerForgeComponents")(type "KiCad")(uri "/home/dan/projects/modular-biped/circuits/v4/Head/v4head/MakerForgeComponents.kicad_sym")(options "")(descr ""))
+  (lib (name "ComponentLibrary")(type "KiCad")(uri "/home/dan/projects/modular-biped/circuits/v4/Head/v4head/ComponentLibrary.kicad_sym")(options "")(descr ""))
+)
