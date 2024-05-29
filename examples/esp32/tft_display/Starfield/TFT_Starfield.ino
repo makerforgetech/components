@@ -1,4 +1,4 @@
-// Animates white pixels to simulate flying through a star field
+  // Animates white pixels to simulate flying through a star field
 
 #include <SPI.h>
 #include <TFT_eSPI.h>
@@ -24,7 +24,16 @@ uint8_t __attribute__((always_inline)) rng()
   return zc;
 }
 
+#define SPEAKER_EN 33
+#define DISPLAY_EN 15
+
 void setup() {
+
+  pinMode(SPEAKER_EN, OUTPUT);
+  digitalWrite(SPEAKER_EN, LOW); // Avoid noise
+  pinMode(DISPLAY_EN, OUTPUT);
+  digitalWrite(DISPLAY_EN, HIGH); // Enable or disable screen backlight
+
   za = random(256);
   zb = random(256);
   zc = random(256);

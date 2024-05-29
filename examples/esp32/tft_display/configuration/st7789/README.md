@@ -20,7 +20,6 @@ Scroll to the section for the ESP-32 (the line that reads `// ###### EDIT THE PI
 // #define TFT_CS   15  // Chip select control pin // I didn't need this
 #define TFT_DC    2  // Data Command control pin
 #define TFT_RST   4  // Reset pin (could connect to RST pin)
-// #define TFT_RST  -1  // Set TFT_RST to -1 if display RESET is c
 ```
 
 Then you can use the examples in this folder, or sketches from Examples -> TFT_eSPI to test the display.

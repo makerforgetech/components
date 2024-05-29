@@ -25,8 +25,8 @@
 Audio audio;
 
 // Wifi Credentials
-String ssid =    "Wifi";
-String password = "Pass";
+String ssid =    "BTHub6-KFX5";
+String password = "fgMPMehLR7gX";
 
 void setup() {
 
