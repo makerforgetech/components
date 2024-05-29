@@ -18,10 +18,10 @@
 const unsigned long BOT_MTBS = 1000; // mean time between scan messages
 
 // Wifi network station credentials
-#define WIFI_SSID "BTHub6-KFX5"
-#define WIFI_PASSWORD "fgMPMehLR7gX"
+#define WIFI_SSID "WIFI"
+#define WIFI_PASSWORD "PASSWORD"
 // Telegram BOT Token (Get from Botfather)
-#define BOT_TOKEN "443567854:AAFLvs7VmIzyYj4cSmH0oDtbShA-N9EODLA"
+#define BOT_TOKEN "TOKEN"
 
 unsigned long bot_lasttime;          // last time messages' scan has been done
 WiFiClientSecure secured_client;
