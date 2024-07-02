@@ -17,7 +17,7 @@ Scroll to the section for the ESP-32 (the line that reads `// ###### EDIT THE PI
 // #define TFT_MISO 34 // I didn't need this
 #define TFT_MOSI 17
 #define TFT_SCLK 18
- #define TFT_CS   15  // Chip select control pin
+#define TFT_CS   15  // Chip select control pin
 #define TFT_DC    2  // Data Command control pin
 #define TFT_RST   4  // Reset pin (could connect to RST pin)
 ```

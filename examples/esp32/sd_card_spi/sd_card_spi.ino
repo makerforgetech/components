@@ -16,7 +16,7 @@
 #define MOSI  13
 #define CS  16
 
-#define VIB 15
+#define VIB 12
 
 SPIClass spi = SPIClass(HSPI);
 
@@ -183,9 +183,9 @@ void setup(){
   Serial.begin(115200);
   Serial.println("Restarting...");
   pinMode(VIB, OUTPUT);
-//  digitalWrite(VIB, HIGH); // Enable or disable screen backlight
+  digitalWrite(VIB, HIGH); // Enable or disable screen backlight
 
-//  delay(1000);
+  delay(1000);
   digitalWrite(VIB, LOW);
 
 

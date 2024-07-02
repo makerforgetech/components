@@ -24,7 +24,7 @@ void setup() {
   // You need to make sure you call Wire.begin() in setup, or the I2C access
   // below will fail.
   Wire.begin();
-  Serial.begin(9600);
+  Serial.begin(115200);
 }
 
 void loop() {

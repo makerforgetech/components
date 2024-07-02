@@ -52,6 +52,8 @@ TFT_eSPI tft;           // A single instance is used for 1 or 2 displays
   #define BUFFERS 1      // 1 buffer for no DMA
 #endif
 
+#define SPEAKER_EN 33
+
 uint16_t pbuffer[BUFFERS][BUFFER_SIZE]; // Pixel rendering buffer
 bool     dmaBuf   = 0;                  // DMA buffer selection
 
@@ -96,6 +98,9 @@ void setup(void) {
   Serial.begin(115200);
   //while (!Serial);
   Serial.println("Starting");
+
+//  pinMode(SPEAKER_EN, OUTPUT);
+//  digitalWrite(SPEAKER_EN, LOW); // Avoid noise
 
 #if defined(DISPLAY_BACKLIGHT) && (DISPLAY_BACKLIGHT >= 0)
   // Enable backlight pin, initially off
